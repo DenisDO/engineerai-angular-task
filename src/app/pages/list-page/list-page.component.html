@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>URL</td>
+            <td>Created At</td>
+            <td>Author</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemsList" (click)="showItemDetails(item)">
+            <td>{{ item.title }}</td>
+            <td>{{ item.url }}</td>
+            <td>{{ item.created_at }}</td>
+            <td>{{ item.author }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<app-item-details [item]="itemDetails" (modalClose)="removeItemDetails()"></app-item-details>

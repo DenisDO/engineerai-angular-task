@@ -1,0 +1,6 @@
+<section *ngIf="item" class="modal">
+    <div>
+        <button (click)="closeModal()">Close</button>
+        <p>{{ item | json }}</p>
+    </div>
+</section>

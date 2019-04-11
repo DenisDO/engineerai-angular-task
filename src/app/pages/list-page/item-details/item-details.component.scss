@@ -1,0 +1,19 @@
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+
+    div {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+
+        button {
+            float: right;
+        }
+    }
+}
